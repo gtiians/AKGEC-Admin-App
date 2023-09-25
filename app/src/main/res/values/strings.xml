@@ -1,0 +1,55 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">AKGEC</string>
+
+    <string name="newsFeed">News Feed</string>
+    <string name="gal">Gallery</string>
+    <string name="notes">   Study\n Material</string>
+    <string name="faculty">Faculty</string>
+    <string name="delNews">      Delete\n News Feed</string>
+    <string name="logOut"> Sign Out </string>
+
+    <string name="selNotice">Select Notice</string>
+    <string name="upNotice">Upload Notice</string>
+    <string name="noticeTitle">News Feed Title</string>
+
+
+    <string name="donglebold" tools:ignore="ReferenceType">@font/donglebold</string>
+    <string name="donglelight" tools:ignore="ReferenceType">@font/donglelight</string>
+    <string name="dongleregular" tools:ignore="ReferenceType">@font/dongleregular</string>
+    <string name="latoregular" tools:ignore="ReferenceType">@font/latoregular</string>
+    <string name="latolight" tools:ignore="ReferenceType">@font/latolight</string>
+    <string name="latobold" tools:ignore="ReferenceType">@font/latobold</string>
+    <string name="poppinsregular" tools:ignore="ReferenceType">@font/poppinsregular</string>
+    <string name="poppinsmedium" tools:ignore="ReferenceType">@font/poppinsmedium</string>
+    <string name="poppinsbold" tools:ignore="ReferenceType">@font/poppinsbold</string>
+    <string name="poppinslight" tools:ignore="ReferenceType">@font/poppinslight</string>
+    <string name="poppinsiralic" tools:ignore="ReferenceType">@font/poppinsitalic</string>
+    <string name="poppinssemibold" tools:ignore="ReferenceType">@font/poppinssemibold</string>
+    <string name="noDataFound">No Data Found</string>
+    <string name="applied">Applied Sciences and Humanities</string>
+    <string name="ce">Civil Engineering</string>
+    <string name="cse">Computer Science and Engineering</string>
+    <string name="eee">Electrical and Electronics Engineering</string>
+    <string name="ece">Electronics and Communication Engineering</string>
+    <string name="me">Mechanical Engineering</string>
+    <string name="it">Information Technology</string>
+    <string name="name">Name</string>
+    <string name="postname">Postname</string>
+    <string name="email">E mail</string>
+    <string name="addfaculty">Add Faculty</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="akgec_notice">AKGEC - News Feed</string>
+    <string name="welcome_akgec_news_feed">Welcome in AKGEC - News Feed</string>
+    <string name="selnotes">Select Notes</string>
+    <string name="no_file_selected">No file selected</string>
+    <string name="notesTitle">Notes Title</string>
+    <string name="uploadNotes">Upload Notes</string>
+    <string name="selImage">Select Image</string>
+    <string name="uploadImage">Upload Image</string>
+    <string name="administration">ADMINISTRATION</string>
+    <string name="password">Password</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="login">Login</string>
+
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#252525</color>
+    <color name="colorPrimaryDark">#004C8C</color>
+    <color name="colorAccent">#0277BD</color>
+
+
+    <color name="textColor">#FFFFFFFF</color>
+    <color name="textTitle">#FFFFFFFF</color>
+    <color name="akgecblack">#252525</color>
+    <color name="akgecbtnred">#ED3837</color>
+    <color name="akgecyellow">#FEF400</color>
+    <color name="akgectextColor">#323232</color>
+
+    <color name="bgMenu">#313840</color>
+    <color name="bgNotice">#000000</color>
+
+    <color name="textcolor">#121212</color>
+    <color name="deeppurple">#7C4DFF</color>
+    <color name="yellow">#ffb300</color>
+    <color name="green1">#00BFA5</color>
+    <color name="pink">#D242EC</color>
+    <color name="red2">#F73E7C</color>
+    <color name="lightgrey">#C1C1C1</color>
+
+</resources>
