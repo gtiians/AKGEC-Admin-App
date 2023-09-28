@@ -7,16 +7,16 @@
     tools:context=".FacultyActivity">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/fab"
         style="@style/Widget.Design.FloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="bottom|right"
         android:layout_margin="16dp"
-        android:src="@drawable/ic_add"
         android:elevation="3dp"
+        android:src="@drawable/ic_add"
         app:fabSize="normal"
-        tools:ignore="ContentDescription,RtlHardcoded" />
+        tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck" />
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"

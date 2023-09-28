@@ -51,5 +51,9 @@
     <string name="password">Password</string>
     <string name="forget_password">Forget Password?</string>
     <string name="login">Login</string>
+    <string name="garv_singh">Garv Singh</string>
+    <string name="student">Student</string>
+    <string name="gtiians_gmail_com">gtiians@gmail.com</string>
+    <string name="update_info">Update Info</string>
 
 </resources>

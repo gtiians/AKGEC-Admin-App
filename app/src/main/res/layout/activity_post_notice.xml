@@ -59,7 +59,7 @@
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
                 android:hint="@string/noticeTitle"
-                tools:ignore="TextContrastCheck" />
+                tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.button.MaterialButton
@@ -70,7 +70,8 @@
             android:layout_margin="10dp"
             android:layout_gravity="center"
             android:textAllCaps="false"
-            android:id="@+id/postNoticeBtn" />
+            android:id="@+id/postNoticeBtn"
+            tools:ignore="VisualLintButtonSize" />
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"

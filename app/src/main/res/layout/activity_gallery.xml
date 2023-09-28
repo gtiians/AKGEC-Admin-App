@@ -25,13 +25,14 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:gravity="center">
+
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:background="@drawable/circle_yellow"
-                    android:src="@drawable/ic_note"
                     android:padding="15dp"
-                    tools:ignore="ContentDescription" />
+                    android:src="@drawable/ic_note"
+                    tools:ignore="ContentDescription,ImageContrastCheck" />
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -64,7 +65,8 @@
             android:text="@string/uploadImage"
             android:layout_marginTop="16dp"
             android:textAllCaps="false"
-            android:id="@+id/uploadImageBtn"/>
+            android:id="@+id/uploadImageBtn"
+            tools:ignore="VisualLintButtonSize" />
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
@@ -72,11 +74,11 @@
             android:layout_height="400dp">
 
             <ImageView
+                android:id="@+id/galleryImageView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                android:id="@+id/galleryImageView"
-                tools:ignore="ContentDescription" />
+                tools:ignore="ContentDescription,ImageContrastCheck" />
 
         </com.google.android.material.card.MaterialCardView>
 

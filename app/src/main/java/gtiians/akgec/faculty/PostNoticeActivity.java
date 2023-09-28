@@ -1,7 +1,8 @@
 package gtiians.akgec.faculty;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 
 
@@ -31,6 +32,7 @@ import java.util.Calendar;
 
 public class PostNoticeActivity extends AppCompatActivity {
 
+
     ImageView noticeView;
     private static final int REQ = 1;
     private EditText noticeTitle;
@@ -43,18 +45,18 @@ public class PostNoticeActivity extends AppCompatActivity {
     private ProgressDialog pd;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_post_notice);
-
 
         CardView selectNotice = findViewById(R.id.selectNotice);
         noticeTitle = findViewById(R.id.noticeTitle);
         Button postNoticeBtn = findViewById(R.id.postNoticeBtn);
         noticeView = findViewById(R.id.noticeView);
 
-        databaseReference = FirebaseDatabase.getInstance().getReference();
+        databaseReference = FirebaseDatabase.getInstance("https://console.firebase.google.com/u/0/project/akgec-gzb-app/database/akgec-gzb-app-default-rtdb/data/~2F").getReference();
         storageReference = FirebaseStorage.getInstance().getReference().child("News Feed");
         pd = new ProgressDialog(this);
 

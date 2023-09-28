@@ -26,6 +26,7 @@ import com.google.firebase.storage.UploadTask;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.util.Arrays;
 
 public class AddTeacherActivity extends AppCompatActivity {
 
@@ -57,11 +58,11 @@ public class AddTeacherActivity extends AppCompatActivity {
 
         String[] items = new String[]{"Select Departments","Applied Sciences & Humanities","Civil Engineering","Computer Science and Engineering","Electrical and Electronics Engineering","Electronics and Communication Engineering","Mechanical Engineering","Information Technology"};
 
-        reference = FirebaseDatabase.getInstance().getReference().child("Faculties");
+        reference = FirebaseDatabase.getInstance().getReference("https://console.firebase.google.com/u/0/project/akgec-gzb-app/database/akgec-gzb-app-default-rtdb/data/~2F").child("Faculties");
         storageReference = FirebaseStorage.getInstance().getReference().child("Faculties");
 
         //setting the adapter on Spinner(imageCategory)
-        addTeacherCategory.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, items));
+        addTeacherCategory.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, items));
         //setting the setOnItemClickListener on spinner(imageCategory)
         addTeacherCategory.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -74,9 +75,7 @@ public class AddTeacherActivity extends AppCompatActivity {
             }
         });
 
-        addTeacherImage.setOnClickListener(v -> {
-            openGallery();
-        });
+        addTeacherImage.setOnClickListener(v -> openGallery());
 
         addTeacherBtn.setOnClickListener(v -> {
             //to check our every field containing something or not
@@ -122,7 +121,7 @@ public class AddTeacherActivity extends AppCompatActivity {
 
         //creating filepath to store data
         final StorageReference filePath;
-        filePath = storageReference.child("Faculties").child(finalimg+"jpg");
+        filePath = storageReference.child("Faculties").child(Arrays.toString(finalimg) +"jpg");
 
         //uploading
         final UploadTask uploadTask = filePath.putBytes(finalimg);
@@ -147,13 +146,15 @@ public class AddTeacherActivity extends AppCompatActivity {
         TeacherData teacherData = new TeacherData(name, post, email, downloadUrl, uniqueKey);
         /*storing in firebase but we will not know so +1 method
         reference.child(uniqueKey).setValue(noticeData);*/
-        databaseReference.child(uniqueKey).setValue(teacherData).addOnSuccessListener(aVoid -> {
-            pd.dismiss();
-            Toast.makeText(AddTeacherActivity.this, "Thank You", Toast.LENGTH_SHORT).show();
-        }).addOnFailureListener(e -> {
-            pd.dismiss();
-            Toast.makeText(AddTeacherActivity.this, "Please Try Again", Toast.LENGTH_SHORT).show();
-        });
+        if (uniqueKey != null) {
+            databaseReference.child(uniqueKey).setValue(teacherData).addOnSuccessListener(aVoid -> {
+                pd.dismiss();
+                Toast.makeText(AddTeacherActivity.this, "Thank You", Toast.LENGTH_SHORT).show();
+            }).addOnFailureListener(e -> {
+                pd.dismiss();
+                Toast.makeText(AddTeacherActivity.this, "Please Try Again", Toast.LENGTH_SHORT).show();
+            });
+        }
     }
 
 

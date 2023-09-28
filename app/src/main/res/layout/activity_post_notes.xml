@@ -67,7 +67,9 @@
                 android:id="@+id/notesTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/notesTitle" />
+                android:hint="@string/notesTitle"
+                android:textColorHint="#757575"
+                tools:ignore="VisualLintTextFieldSize,TextContrastCheck" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -77,7 +79,8 @@
             android:text="@string/uploadNotes"
             android:layout_marginTop="16dp"
             android:textAllCaps="false"
-            android:id="@+id/uploadNotesBtn"/>
+            android:id="@+id/uploadNotesBtn"
+            tools:ignore="VisualLintButtonSize" />
 
     </LinearLayout>
 

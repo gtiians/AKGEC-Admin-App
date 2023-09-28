@@ -10,14 +10,14 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         LinearLayout notice = findViewById(R.id.notice);
         LinearLayout gallery = findViewById(R.id.gallery);
@@ -67,8 +67,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
                 break;
 
-
         }
-
     }
+
+
 }

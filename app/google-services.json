@@ -1,13 +1,14 @@
 {
   "project_info": {
-    "project_number": "539514179613",
-    "project_id": "akg-gzb-app",
-    "storage_bucket": "akg-gzb-app.appspot.com"
+    "project_number": "728550158913",
+    "firebase_url": "https://akgec-gzb-app-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "akgec-gzb-app",
+    "storage_bucket": "akgec-gzb-app.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:539514179613:android:b4b6db44620e9d9ff2f6f4",
+        "mobilesdk_app_id": "1:728550158913:android:c6784aeddbf057ad900cc0",
         "android_client_info": {
           "package_name": "gtiians.akgec.faculty"
         }
@@ -15,7 +16,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCt9nSiptCVp92_9Qt7t4XNuMul8Kkmvpc"
+          "current_key": "AIzaSyDrOov9XQBy6-kdSKlOwJCjqY41C010ako"
         }
       ],
       "services": {

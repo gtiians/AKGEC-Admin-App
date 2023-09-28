@@ -24,21 +24,27 @@
             android:id="@+id/addTeacherName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/name" />
+            android:hint="@string/name"
+            android:minHeight="48dp"
+            tools:ignore="VisualLintTextFieldSize" />
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/addTeacherPost"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="@string/postname"
             android:inputType="text"
-            android:hint="@string/postname" />
+            android:minHeight="48dp"
+            tools:ignore="VisualLintTextFieldSize" />
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/addTeacherEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="@string/email"
             android:inputType="textEmailAddress"
-            android:hint="@string/email" />
+            android:minHeight="48dp"
+            tools:ignore="VisualLintTextFieldSize" />
 
         <Spinner
             android:layout_width="match_parent"
@@ -54,7 +60,8 @@
             android:text="@string/addfaculty"
             android:layout_marginTop="16dp"
             android:textAllCaps="false"
-            android:id="@+id/addTeacherBtn"/>
+            android:id="@+id/addTeacherBtn"
+            tools:ignore="VisualLintButtonSize" />
 
     </LinearLayout>
 

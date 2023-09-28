@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="4dp">
@@ -19,30 +20,31 @@
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:paddingLeft="12dp"
+                android:paddingStart="12dp"
                 android:layout_weight="1.5"
                 android:orientation="vertical"
-                android:gravity="center_vertical">
+                android:gravity="center_vertical"
+                tools:ignore="RtlSymmetry">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/teacherName"
-                    android:text="Garv Singh"
+                    android:text="@string/garv_singh"
                     android:textColor="@color/textcolor"
                     android:textSize="18sp"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/teacherPost"
-                    android:text="Student"
+                    android:text="@string/student"
                     android:textColor="@color/textcolor"
                     android:textSize="18sp"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/teacherEmail"
-                    android:text="gtiians@gmail.com"
+                    android:text="@string/gtiians_gmail_com"
                     android:textColor="@color/textcolor"
                     android:textSize="18sp"/>
 
@@ -50,7 +52,7 @@
                     android:id="@+id/teacherUpdate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Update Info"
+                    android:text="@string/update_info"
                     android:layout_marginVertical="4dp"
                     style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
 
