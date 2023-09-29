@@ -1,6 +1,7 @@
 # AKGECfaculty - AndroidApp
 
-This College Android App only for Admin/Faculty developed as an internship project during the second year (Dec, 2021) , is a powerful and user-centric mobile application exclusively designed for exclusively for administrative staff and faculty members,enhancing their communication and administrative tasks within the academic institution. This feature-rich app using realtime database through Google Firebase database provides many real-time functionalities.
+This College Android App only for Admin/Faculty developed as an internship project during the second year (Dec, 2021) , is a powerful and user-centric mobile application exclusively designed for administrative staff and faculty members, enhancing their communication and administrative tasks within the academic institution. This feature-rich app using realtime database through Google Firebase database provides many real-time functionalities.
+
 Here's a summary of its key features and functionalities:
 
 *1. Admin Login:* The app allows faculty members to securely log in using their unique credentials, ensuring data privacy and security.
