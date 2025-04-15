@@ -1,4 +1,4 @@
-# AKGEC Admin - Android App
+# College Admin - Android App
 
 This College Android App only for Admin/Faculty developed as an internship project during the second year (Dec, 2021) , is a powerful and user-centric mobile application exclusively designed for administrative staff and faculty members, enhancing their communication and administrative tasks within the academic institution. This feature-rich app using realtime database through Google Firebase database provides many real-time functionalities.
 
